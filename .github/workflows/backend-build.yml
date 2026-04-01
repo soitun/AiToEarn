@@ -157,10 +157,30 @@ jobs:
             echo "Base: $BASE_REF"
             echo "Head: HEAD"
 
-            AFFECTED_APPS=$(pnpm nx show projects --affected --type=app --sep "," --exclude="@yikart/source" --exclude="browser-automation-worker" --base=$BASE_REF --head=HEAD 2>/dev/null || echo "")
+            echo ""
+            echo "📊 Diagnostic:"
+            git log --oneline -3
+            echo ""
+            echo "Changed files:"
+            git diff --name-only $BASE_REF HEAD 2>/dev/null || true
+            echo ""
+
+            NX_OUTPUT=$(pnpm nx show projects --affected --type=app --sep "," --exclude="@yikart/source" --base=$BASE_REF --head=HEAD 2>&1)
+            NX_EXIT_CODE=$?
+
+            echo "Nx exit code: $NX_EXIT_CODE"
+            echo "Nx output: $NX_OUTPUT"
+
+            if [ $NX_EXIT_CODE -ne 0 ]; then
+              echo "⚠️  Nx affected detection failed (exit code: $NX_EXIT_CODE)"
+              echo "Falling back to building ALL apps"
+              AFFECTED_APPS="aitoearn-ai,aitoearn-server"
+            else
+              AFFECTED_APPS="$NX_OUTPUT"
+            fi
 
             if [ -z "$AFFECTED_APPS" ]; then
-              echo "⚠️  No affected apps detected"
+              echo "ℹ️  No affected apps detected"
               echo "affected_apps=" >> $GITHUB_OUTPUT
             else
               echo "✅ Affected apps: $AFFECTED_APPS"
