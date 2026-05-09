@@ -149,8 +149,6 @@ AiToEarn 最核心的目标：**帮助每一位创作者赚钱**。
 
 <img src="presentation/app-screenshot/0.%20api-key/api-key-settings.png" alt="获取 API Key" width="600">
 
-> ⚠️ 请妥善保管你的 API Key，不要泄露给他人。
-
 ---
 
 <h2 id="use-in-openclaw">② 在龙虾 OpenClaw 中使用</h2>
@@ -166,7 +164,9 @@ AiToEarn 最核心的目标：**帮助每一位创作者赚钱**。
 npx -y @aitoearn/openclaw-plugin-cli
 ```
 
-首次运行时请按照提示选择并输入 API Key，完成安装和配置引导。
+首次运行后会先让您选择环境，请注意，AitoEarn有两个环境，分别是中国版和国际版环境。
+如果使用中国版环境+国际版的key会导致401报错。
+请确保环境与key是匹配的。
 
 安装完成后，你就可以在 OpenClaw 中直接接收并执行 AiToEarn 的赚钱任务：
 
