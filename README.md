@@ -343,7 +343,7 @@ Electron 项目为 AiToEarn 提供桌面客户端。
 <img src="presentation/wechat.jpg" alt="微信二维码" width="200">
 
 ## 推荐
-
+- [AtomGit托管](https://atomgit.com/yikart/AitoEarn)
 - [MuseTalk](https://github.com/TMElyralab/MuseTalk)
 - [video_spider](https://github.com/5ime/video_spider)
 - [CosyVoice](https://github.com/FunAudioLLM/CosyVoice?tab=readme-ov-file)
