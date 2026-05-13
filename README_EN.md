@@ -13,7 +13,7 @@ English | [简体中文](README.md) | [日本語](README_JA.md)
 AiToEarn helps OPCs (One-Person Companies), creators, brands, and businesses build, distribute, and monetize content with **AI-powered automation** across the world's most popular platforms.
 
 Supported Channels:
-Douyin, Xiaohongshu (Rednote), Kuaishou, Bilibili, TikTok, YouTube, Facebook, Instagram, Threads, Twitter (X), Pinterest, LinkedIn
+Douyin, Xiaohongshu (Rednote), Kuaishou, Bilibili, WeChat Channels, TikTok, YouTube, Facebook, Instagram, Threads, Twitter (X), Pinterest, LinkedIn
 
 ## 🚀 Quick Start with AiToEarn (5 Ways)
 
@@ -80,7 +80,7 @@ Creators can sell content on the platform to complete brand promotion tasks. All
 
 Distribute content to 10+ major platforms worldwide with one click — no more manual posting on each platform.
 
-- **Multi-Platform Distribution**: Douyin, Kwai, Bilibili, Rednote, TikTok, YouTube, Facebook, Instagram, Threads, X (Twitter), Pinterest, LinkedIn
+- **Multi-Platform Distribution**: Douyin, Kwai, Bilibili, Rednote, WeChat Channels, TikTok, YouTube, Facebook, Instagram, Threads, X (Twitter), Pinterest, LinkedIn
 - **Calendar Scheduler**: Plan and coordinate content publishing across all platforms like a calendar
 
 <img src="presentation/publish-cn.png" width="30%"> <img src="presentation/channel-cn.png" width="30%">
