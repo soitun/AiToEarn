@@ -162,7 +162,10 @@ export async function aiChatStream(data: {
   const token = useUserStore.getState().token
   const lang = useUserStore.getState().lang
 
-  const response = await fetch('https://aitoearn.ai/api/ai/chat', {
+  // 使用环境变量，保持 SSR 兼容性与 request.ts 一致
+  const apiBaseUrl = process.env.NEXT_PUBLIC_API_URL || '';
+
+  const response = await fetch(`${apiBaseUrl}/ai/chat`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
