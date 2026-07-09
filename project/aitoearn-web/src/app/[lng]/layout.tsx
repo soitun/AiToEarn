@@ -90,14 +90,6 @@ export default async function RootLayout({
             <LayoutSidebar />
             {/* 主内容区域 - 根据页面类型动态控制 pt-14 */}
             <MainContent>{children}</MainContent>
-            {/* eslint-disable-next-line next/no-sync-scripts */}
-            <script src="/js/xhs_web_sign.js" />
-            {/* eslint-disable-next-line next/no-sync-scripts */}
-            <script src="/js/xhs_sign_init.js" />
-            {/* eslint-disable-next-line next/no-sync-scripts */}
-            <script src="/js/xhs_sign_core.js" />
-            {/* eslint-disable-next-line next/no-sync-scripts */}
-            <script src="/js/xhs_sign_inject.js" />
           </div>
         </Providers>
       </body>
